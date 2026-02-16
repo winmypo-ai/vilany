@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Padrinhos</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<audio id="musica" autoplay loop>
+  <source src="audio/cancion.mp3" type="audio/mpeg">
+</audio>
+
+<main class="convite pagina2">
+  <img src="img/pagina2.jpg" alt="Padrinhos">
+
+  <nav class="navegacion volver">
+    <a class="btn-secundario" href="index.html">Volver</a>
+  </nav>
+</main>
+
+<script>
+const audio=document.getElementById("musica");
+document.body.addEventListener("click",function(){
+  audio.play().catch(function(){});
+},{once:true});
+</script>
+
+</body>
+</html>
